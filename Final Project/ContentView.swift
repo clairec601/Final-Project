@@ -11,6 +11,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Welcome to Productivi-Me")
+                .font(.title2)
+                .fontWeight(.black)
+                .foregroundColor(Color("AccentColor5"))
+            
+            
         }
         .padding()
     }
