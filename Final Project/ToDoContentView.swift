@@ -41,7 +41,7 @@ struct ToDoContentView: View {
                         .font(.system(size:40))
                 }
             }
-            .padding()
+            .padding() 
             Spacer()
             
             List {
