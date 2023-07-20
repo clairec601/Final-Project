@@ -28,6 +28,7 @@ struct NewToDoView: View {
                 self.addTask(title: self.title, isImportant: self.isImportant)
             }){
                 Text("Add")
+                    .foregroundColor(.blue)
             }
             .padding()
         }

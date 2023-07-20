@@ -27,7 +27,7 @@ struct QuizResults: View {
                     Text("The BEST study method for you is the Feynman Technique")
                 }
                 
-                NavigationLink(destination: ToDoContentView()){
+                NavigationLink(destination: Dashboard()){
                     Text("Go to Dashboard")
                         .padding()
                 }

@@ -39,6 +39,7 @@ struct ToDoContentView: View {
                 }){
                     Text("+")
                         .font(.system(size:40))
+                        .foregroundColor(.blue)
                 }
             }
             .padding() 
