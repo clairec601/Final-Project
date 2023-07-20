@@ -16,30 +16,31 @@ struct Question3view: View {
             ZStack(){
                 VStack(spacing: 20) {
                    Text("Q3. Do you study well in a group or by yourself?")
+                        .fontWeight(.semibold)
                     
                     Button("a. In a group"){
                         ContentView.counter3 += 1
                         print(ContentView.counter3)
                     }
                     .padding(.top, 20.0)
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
                     Button("b. By myself or with one/two partners"){
                         ContentView.counter2 += 1
                         print(ContentView.counter2)
                     }
-                    .padding()
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
-                    Button("c. In a group Both are fine"){
+                    Button("c. Both are fine"){
                         ContentView.counter1 += 1
                         print(ContentView.counter1)
                     }
-                    .padding()
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
                     NavigationLink(destination: Question4view()){
                         Text("Next Question")
+                            .foregroundColor(.blue)
+                            .padding(.top, 30.0)
                     }
 
                     

@@ -32,17 +32,19 @@ struct Question1view: View {
                     print(ContentView.counter2)
                 }
                 .padding(.top, 1.0)
-                .foregroundColor(.black)
+                .foregroundColor(Color("AccentColor5"))
                 
                 Button("c. I don’t study at all /find it bothersome to study"){
                     ContentView.counter1 += 1
                     print(ContentView.counter1)
                 }
                 .padding(.top, 1.0)
-                .foregroundColor(.black)
+                .foregroundColor(Color("AccentColor5"))
                 
                 NavigationLink(destination: Question2view()) {
                     Text("Next Question")
+                        .foregroundColor(.blue)
+                        .padding(.top, 30.0)
                     
                 }
                 

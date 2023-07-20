@@ -16,34 +16,36 @@ struct Question5view: View {
         NavigationStack {
             ZStack {
                 VStack(spacing: 20) {
-                    Spacer()
+                    //Spacer()
                     Text("Q5.  What is the main thing you wish to improve about your study habits?")
-                    Spacer()
+                    //Spacer()
+                        .fontWeight(.semibold)
                     Button("a. Studying more effectively"){
                         ContentView.counter3 += 1
                         print(ContentView.counter3)
                         }
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
                     Button("b. Retaining information long term"){
                         ContentView.counter2 += 1
                         print(ContentView.counter2)
                     }
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
                     Button("c. Studying more frequently/reducing distractions"){
                         ContentView.counter1 += 1
                         print(ContentView.counter1)
                     }
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("AccentColor5"))
                     
-                    Spacer()
+                    //Spacer()
                     
                     NavigationLink(destination: QuizResults()) {
                         Text("Results")
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color.blue)
+                            .padding(.top, 30.0)
                     }
-                    Spacer()
+                    //Spacer()
                     
                 }
                 .padding(.horizontal, 45.0)
