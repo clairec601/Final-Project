@@ -9,6 +9,7 @@ import SwiftUI
 
 @main
 struct Final_ProjectApp: App {
+    @EnvironmentObject var a: counter
     let persistenceController = PersistenceController.shared
     var body: some Scene { 
         WindowGroup {

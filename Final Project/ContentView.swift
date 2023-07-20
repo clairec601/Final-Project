@@ -7,7 +7,15 @@
 
 import SwiftUI
 
+class counter: ObservableObject {
+    @Published var counter1 = 0
+    @Published var counter2 = 0
+    @Published var counter3 = 0
+}
+
 struct ContentView: View {
+    @EnvironmentObject var a: counter
+    
     var body: some View {
         NavigationStack {
             ZStack(){
@@ -61,5 +69,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(counter())
     }
 }
