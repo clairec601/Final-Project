@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4F541AEE2A6863B4007F5CCF /* Question1view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F541AED2A6863B4007F5CCF /* Question1view.swift */; };
+		7F1EB5A52A68F99A00546A38 /* QuizResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F1EB5A42A68F99A00546A38 /* QuizResults.swift */; };
 		7F4B38EA2A68E9EF009D4751 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38E92A68E9EF009D4751 /* ToDoItem.swift */; };
 		7F4B38EC2A68EA03009D4751 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38EB2A68EA03009D4751 /* NewToDoView.swift */; };
 		7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38ED2A68EA33009D4751 /* Persistence.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		4F541AED2A6863B4007F5CCF /* Question1view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1view.swift; sourceTree = "<group>"; };
+		7F1EB5A42A68F99A00546A38 /* QuizResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizResults.swift; sourceTree = "<group>"; };
 		7F4B38E92A68E9EF009D4751 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
 		7F4B38EB2A68EA03009D4751 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
 		7F4B38ED2A68EA33009D4751 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */,
 				7FE4E1232A6195C60091BCAC /* ContentView.swift */,
 				4F541AED2A6863B4007F5CCF /* Question1view.swift */,
+				7F1EB5A42A68F99A00546A38 /* QuizResults.swift */,
 				7FE4E1252A6195C70091BCAC /* Assets.xcassets */,
 				7FE4E1272A6195C70091BCAC /* Preview Content */,
 			);
@@ -280,6 +283,7 @@
 				7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */,
 				7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */,
 				7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */,
+				7F1EB5A52A68F99A00546A38 /* QuizResults.swift in Sources */,
 				7F4B38EA2A68E9EF009D4751 /* ToDoItem.swift in Sources */,
 				7F4B38F02A68EA59009D4751 /* ToDoContentView.swift in Sources */,
 				7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */,

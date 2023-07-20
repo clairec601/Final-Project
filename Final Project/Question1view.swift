@@ -13,7 +13,7 @@ struct Question1view: View {
     var body: some View {
         ZStack(){
             VStack(){
-                Text("Q2: How often do you get distracted while studying?")
+                Text("Q1: How often do you get distracted while studying?")
                     .fontWeight(.semibold)
                 
                 Button("a. Not that often"){
