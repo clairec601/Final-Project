@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		4F541AEE2A6863B4007F5CCF /* Question1view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F541AED2A6863B4007F5CCF /* Question1view.swift */; };
+		7F4B38EA2A68E9EF009D4751 /* ToDoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38E92A68E9EF009D4751 /* ToDoItem.swift */; };
+		7F4B38EC2A68EA03009D4751 /* NewToDoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38EB2A68EA03009D4751 /* NewToDoView.swift */; };
+		7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38ED2A68EA33009D4751 /* Persistence.swift */; };
+		7F4B38F02A68EA59009D4751 /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */; };
+		7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38F12A68EACA009D4751 /* Final Project.xcdatamodeld */; };
 		7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */; };
 		7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1232A6195C60091BCAC /* ContentView.swift */; };
 		7FE4E1262A6195C70091BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4E1252A6195C70091BCAC /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 
 /* Begin PBXFileReference section */
 		4F541AED2A6863B4007F5CCF /* Question1view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question1view.swift; sourceTree = "<group>"; };
+		7F4B38E92A68E9EF009D4751 /* ToDoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoItem.swift; sourceTree = "<group>"; };
+		7F4B38EB2A68EA03009D4751 /* NewToDoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewToDoView.swift; sourceTree = "<group>"; };
+		7F4B38ED2A68EA33009D4751 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
+		7F4B38F22A68EACA009D4751 /* Final Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Final Project.xcdatamodel"; sourceTree = "<group>"; };
 		7FE4E11E2A6195C60091BCAC /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		7FE4E1232A6195C60091BCAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +107,11 @@
 			isa = PBXGroup;
 			children = (
 				7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */,
+				7F4B38E92A68E9EF009D4751 /* ToDoItem.swift */,
+				7F4B38EB2A68EA03009D4751 /* NewToDoView.swift */,
+				7F4B38ED2A68EA33009D4751 /* Persistence.swift */,
+				7F4B38F12A68EACA009D4751 /* Final Project.xcdatamodeld */,
+				7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */,
 				7FE4E1232A6195C60091BCAC /* ContentView.swift */,
 				4F541AED2A6863B4007F5CCF /* Question1view.swift */,
 				7FE4E1252A6195C70091BCAC /* Assets.xcassets */,
@@ -260,8 +275,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F4B38EC2A68EA03009D4751 /* NewToDoView.swift in Sources */,
 				4F541AEE2A6863B4007F5CCF /* Question1view.swift in Sources */,
 				7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */,
+				7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */,
+				7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */,
+				7F4B38EA2A68E9EF009D4751 /* ToDoItem.swift in Sources */,
+				7F4B38F02A68EA59009D4751 /* ToDoContentView.swift in Sources */,
 				7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -581,6 +601,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7F4B38F12A68EACA009D4751 /* Final Project.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7F4B38F22A68EACA009D4751 /* Final Project.xcdatamodel */,
+			);
+			currentVersion = 7F4B38F22A68EACA009D4751 /* Final Project.xcdatamodel */;
+			path = "Final Project.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 7FE4E1162A6195C60091BCAC /* Project object */;
 }
