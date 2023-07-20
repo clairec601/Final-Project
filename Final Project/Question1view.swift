@@ -8,38 +8,49 @@
 import SwiftUI
 
 struct Question1view: View {
+    
     @EnvironmentObject var a: counter
     
     var body: some View {
-        ZStack(){
-            VStack(){
-                Text("Q1: How often do you get distracted while studying?")
+        NavigationStack{
+            ZStack(){
+            VStack(spacing: 20){
+                Text("Q1: How effectively do you study? Do you find yourself struggling to retain information?")
                     .fontWeight(.semibold)
                 
-                Button("a. Not that often"){
-                    self.a.counter1 += 1
-                    print(self.a.counter1) //check to see if counter works
+                Button("a. I study well and/or rarely struggle with retaining information"){
+                    self.a.counter3 += 1
+                    print(self.a.counter3) //check to see if counter works
                 }
                 .padding(.top, 20.0)
-                .foregroundColor(.black)
+                .foregroundColor(Color("AccentColor5"))
                 
-                Button("b. Sometimes, but it's manageable"){
+                
+                
+                Button("b. Sort of well and/or I struggle to retain information"){
                     self.a.counter2 += 1
                     print(self.a.counter2)
                 }
                 .padding(.top, 1.0)
                 .foregroundColor(.black)
                 
-                Button("c. I always get distracted"){
-                    self.a.counter3 += 1
-                    print(self.a.counter3)
+                Button("c. I don’t study at all /find it bothersome to study"){
+                    self.a.counter1 += 1
+                    print(self.a.counter1)
                 }
                 .padding(.top, 1.0)
                 .foregroundColor(.black)
                 
+                NavigationLink(destination: Question2view()) {
+                    Text("Next Question")
+                    
+                }
                 
             }
-        }
+            .padding(.horizontal, 45.0)
+         }
+    }
+            
     }
 }
 

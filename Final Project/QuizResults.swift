@@ -13,16 +13,16 @@ struct QuizResults: View {
     var body: some View {
         Text("RESULTS:")
         
-        if (self.a.counter1 >= 2){ //depends how many questions there are
-            Text("The BEST study method for you is _____")
+        if (self.a.counter1 >= 3){ //depends how many questions there are
+            Text("The BEST study method for you is the Pomodora method")
         }
         
-        if (self.a.counter2 >= 2){
-            Text("The BEST study method for you is _____")
+        if (self.a.counter2 >= 3){
+            Text("The BEST study method for you is the Space Repetition method")
         }
         
-        if (self.a.counter3 >= 2){
-            Text("The BEST study method for you is _____")
+        if (self.a.counter3 >= 3){
+            Text("The BEST study method for you is the Feynman Technique")
         }
     }
 }
