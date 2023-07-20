@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Question3view: View {
     
-    @EnvironmentObject var a: counter
+    //@EnvironmentObject var a: counter
     
     var body: some View {
         NavigationStack {
@@ -18,22 +18,22 @@ struct Question3view: View {
                    Text("Q3. Do you study well in a group or by yourself?")
                     
                     Button("a. In a group"){
-                        self.a.counter3 += 1
-                        print(self.a.counter3)
+                        ContentView.counter3 += 1
+                        print(ContentView.counter3)
                     }
                     .padding(.top, 20.0)
                     .foregroundColor(.black)
                     
                     Button("b. By myself or with one/two partners"){
-                        self.a.counter2 += 1
-                        print(self.a.counter2)
+                        ContentView.counter2 += 1
+                        print(ContentView.counter2)
                     }
                     .padding()
                     .foregroundColor(.black)
                     
                     Button("c. In a group Both are fine"){
-                        self.a.counter1 += 1
-                        print(self.a.counter1)
+                        ContentView.counter1 += 1
+                        print(ContentView.counter1)
                     }
                     .padding()
                     .foregroundColor(.black)
@@ -59,6 +59,6 @@ struct Question3view: View {
 struct Question3view_Previews: PreviewProvider {
     static var previews: some View {
         Question3view()
-            .environmentObject(counter())
+            //.environmentObject(counter())
     }
 }

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Question4view: View {
     
-    @EnvironmentObject var a: counter
+   // @EnvironmentObject var a: counter
 
     var body: some View {
         NavigationStack {
@@ -19,20 +19,20 @@ struct Question4view: View {
                     Text("Q4.  How often do you study before an exam/test?")
                     Spacer()
                     Button("a. A few weeks/a week before"){
-                        self.a.counter3 += 1
-                        print(self.a.counter3)
+                        ContentView.counter3 += 1
+                        print(ContentView.counter3)
                         }
                     .foregroundColor(.black)
                     
                     Button("b.  A couple days before"){
-                        self.a.counter2 += 1
-                        print(self.a.counter2)
+                        ContentView.counter2 += 1
+                        print(ContentView.counter2)
                     }
                     .foregroundColor(.black)
                     
                     Button("c. A night before an exam/test"){
-                        self.a.counter1 += 1
-                        print(self.a.counter1)
+                        ContentView.counter1 += 1
+                        print(ContentView.counter1)
                     }
                     .foregroundColor(.black)
                     
@@ -55,6 +55,6 @@ struct Question4view: View {
 struct Question4view_Previews: PreviewProvider {
     static var previews: some View {
         Question4view()
-            .environmentObject(counter())
+            //.environmentObject(counter())
     }
 }
