@@ -16,53 +16,76 @@ struct TimerContentView: View {
     
     
     var body: some View {
-        VStack {
-            
-            Text("SET YOUR WORK TIMER!")
-                .multilineTextAlignment(.center)
-                .font(.system(size:20))
-                .fontWeight(.semibold)
-                .padding(.vertical, 3.0)
-            Text("You can also use this timer for breaks :)")
-                .font(.system(size:15))
-                .padding(.bottom)
-            
-            Text("\(vm.time)")
-                .font(.system(size:40))
-                .fontWeight(.semibold)
-            
-                .alert("Timer done!", isPresented: $vm.showingAlert){
-                    Button("Continue", role: .cancel){
-                    }
-                }
-            
-            Slider(value: $vm.minutes, in: 1...60, step: 1)
-                .padding()
-                .disabled(vm.isRunning)
-                .animation(.easeInOut, value: vm.minutes)
-            
-            
-
-            HStack(spacing: 50){
-                Button("Start"){
-                    vm.start(minutes: vm.minutes)
-                }
-                .disabled(vm.isRunning)
-                .foregroundColor(.blue)
-                
-                Button("Reset", action: vm.reset)
-                .foregroundColor(.red)
-            }
-            
-        }
+        ZStack(){
+            Color("AccentColor")
+                .ignoresSafeArea()
+            Circle()
+                .scale(1.7)
+                .foregroundColor(Color(red: 255/255, green: 201/255, blue: 201/255).opacity(0.50))
+            Circle()
+                .scale(1.35)
+                .foregroundColor(Color("AccentColor2").opacity(0.15))
         
-        .onReceive(timer){_ in
-            vm.updateCountdown()
-            if (vm.time == "0:01"){
-                    self.playSound()
+            Circle()
+                .scale(1.00)
+                .foregroundColor(Color("AccentColor1").opacity(0.80))
+            
+            VStack {
+                
+                Text("SET YOUR WORK TIMER!")
+                    .multilineTextAlignment(.center)
+                    .font(.system(size:25))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("AccentColor5"))
+                    .padding(.top, 20.0)
+                    .padding(.bottom, 10.0)
+                Text("You can also use this timer for breaks :)")
+                    .font(.system(size:15))
+                    .padding(.bottom)
+                    .foregroundColor(Color("AccentColor4"))
+                
+                Text("\(vm.time)")
+                    .font(.system(size:40))
+                    .fontWeight(.semibold)
+                    .foregroundColor(Color("AccentColor5"))
+                
+                    .alert("Timer done!", isPresented: $vm.showingAlert){
+                        Button("Continue", role: .cancel){
+                        }
+                    }
+                
+                Slider(value: $vm.minutes, in: 1...60, step: 1)
+                    .padding()
+                    .disabled(vm.isRunning)
+                    .animation(.easeInOut, value: vm.minutes)
+                    .tint(Color("AccentColor5"))
+                
+                
+                
+                HStack(spacing: 50){
+                    Button("Start"){
+                        vm.start(minutes: vm.minutes)
+                    }
+                    .disabled(vm.isRunning)
+                    .foregroundColor(.blue)
+                    .padding(.vertical, 20.0)
+                    
+                    Button("Reset", action: vm.reset)
+                        .foregroundColor(.red)
+                        .padding(.vertical, 20.0)
+                }
+                
+                
             }
+           
+            .onReceive(timer){_ in
+                vm.updateCountdown()
+                if (vm.time == "0:01"){
+                    self.playSound()
+                }
+            }
+            .padding()
         }
-        .padding()
     }
    
     func playSound() {
