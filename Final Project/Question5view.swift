@@ -80,8 +80,9 @@ struct Question5view: View {
                     }
                     .foregroundColor(Color("AccentColor4"))
                     //.padding(.top, 40.0)
-                    .frame(width: 120, height: 40)
+                    .frame(width: 100, height: 40)
                     .background(Capsule().foregroundColor(Color("AccentColor2")).opacity(0.35))
+                    .fontWeight(.semibold)
                     
                     
                 }
