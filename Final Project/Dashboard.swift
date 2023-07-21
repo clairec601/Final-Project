@@ -36,8 +36,22 @@ struct Dashboard: View {
                 
                 VStack(alignment: .center, spacing: 20){
                 Spacer()
-                    Text("WELCOME TO THE DASHBOARD")
-                        .font(.title)
+                    .frame(height: 40)
+                
+                NavigationLink(destination: ToDoContentView()){
+                    Text("Set up a to-do list!")
+                }
+                .foregroundColor(Color("AccentColor5"))
+                
+                
+                NavigationLink(destination: TimerContentView()){
+                    Text("Use our work timer!")
+                }
+                .foregroundColor(Color("AccentColor5"))
+                .padding()
+                
+                VStack{
+                    Text("Check out other study methods:")
                         .fontWeight(.semibold)
                         .multilineTextAlignment(.center)
                         .padding(.horizontal, 50.0)
@@ -60,18 +74,31 @@ struct Dashboard: View {
                         .frame(width: 300, height: 40)
                         .background(Capsule().foregroundColor(Color("AccentColor2")).opacity(0.35))
                         .padding()
-                        Spacer()
-                        Spacer()
-                        Spacer()
-                        Spacer()
-          
                     
+                    NavigationLink(destination: PomodoroMethod()){
+                        Text(" ➡ Pomodoro Method")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    .padding()
+                    
+                    NavigationLink(destination: FeynmanTechnique()){
+                        Text(" ➡ Feynman Technique")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    
+                    
+                    NavigationLink(destination: SpaceRepetition()){
+                        Text(" ➡ Space Repetition")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    .padding(.top, 10.0)
+                    .padding(.bottom, 35.0)
                 }
-                Spacer()
-                .padding(.top, 50.0)
-
+                .background(Rectangle() .foregroundColor(.accentColor))
+                .cornerRadius(15)
+                
+                
             }
-            
         }
     }
 }

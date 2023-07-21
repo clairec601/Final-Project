@@ -11,7 +11,7 @@ extension TimerContentView {
     final class ViewModel: ObservableObject{
         @Published var isRunning = false
         @Published var showingAlert = false
-        @Published var time: String = "10:00"
+        @Published var time: String = "0:00"
         @Published var minutes: Float = 0.0 {
             didSet{
                 self.time = "\(Int(minutes)):00"

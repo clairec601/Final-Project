@@ -24,6 +24,9 @@
 		7F703D472A6A069600AFD3A0 /* TimerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D462A6A069600AFD3A0 /* TimerContentView.swift */; };
 		7F703D4A2A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F703D492A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 */; };
 		7F703D4C2A6A06F000AFD3A0 /* ContentView-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D4B2A6A06F000AFD3A0 /* ContentView-Model.swift */; };
+		7F703D4E2A6A3E0800AFD3A0 /* PomodoroMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D4D2A6A3E0800AFD3A0 /* PomodoroMethod.swift */; };
+		7F703D502A6A3E1500AFD3A0 /* FeynmanTechnique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D4F2A6A3E1500AFD3A0 /* FeynmanTechnique.swift */; };
+		7F703D522A6A3E2000AFD3A0 /* SpaceRepetition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D512A6A3E2000AFD3A0 /* SpaceRepetition.swift */; };
 		7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */; };
 		7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1232A6195C60091BCAC /* ContentView.swift */; };
 		7FE4E1262A6195C70091BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4E1252A6195C70091BCAC /* Assets.xcassets */; };
@@ -69,6 +72,9 @@
 		7F703D462A6A069600AFD3A0 /* TimerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContentView.swift; sourceTree = "<group>"; };
 		7F703D492A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
 		7F703D4B2A6A06F000AFD3A0 /* ContentView-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-Model.swift"; sourceTree = "<group>"; };
+		7F703D4D2A6A3E0800AFD3A0 /* PomodoroMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroMethod.swift; sourceTree = "<group>"; };
+		7F703D4F2A6A3E1500AFD3A0 /* FeynmanTechnique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeynmanTechnique.swift; sourceTree = "<group>"; };
+		7F703D512A6A3E2000AFD3A0 /* SpaceRepetition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceRepetition.swift; sourceTree = "<group>"; };
 		7FE4E11E2A6195C60091BCAC /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		7FE4E1232A6195C60091BCAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -155,6 +161,9 @@
 				7F1EB5A42A68F99A00546A38 /* QuizResults.swift */,
 				4F4E02A82A6A4EC20067ED17 /* LibreCaslonText-Regular.ttf */,
 				7F1B04082A69C7300011A92A /* Dashboard.swift */,
+				7F703D4D2A6A3E0800AFD3A0 /* PomodoroMethod.swift */,
+				7F703D4F2A6A3E1500AFD3A0 /* FeynmanTechnique.swift */,
+				7F703D512A6A3E2000AFD3A0 /* SpaceRepetition.swift */,
 				7F703D462A6A069600AFD3A0 /* TimerContentView.swift */,
 				7F703D482A6A06AF00AFD3A0 /* Sound */,
 				7FE4E1252A6195C70091BCAC /* Assets.xcassets */,
@@ -325,8 +334,10 @@
 				4F541AEE2A6863B4007F5CCF /* Question1view.swift in Sources */,
 				4F016A092A6999DC00540AC7 /* Question3view.swift in Sources */,
 				7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */,
+				7F703D4E2A6A3E0800AFD3A0 /* PomodoroMethod.swift in Sources */,
 				4F016A072A698A8F00540AC7 /* Question2view.swift in Sources */,
 				7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */,
+				7F703D522A6A3E2000AFD3A0 /* SpaceRepetition.swift in Sources */,
 				7F703D4C2A6A06F000AFD3A0 /* ContentView-Model.swift in Sources */,
 				7F703D472A6A069600AFD3A0 /* TimerContentView.swift in Sources */,
 				7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */,
@@ -335,6 +346,7 @@
 				4F016A0B2A699BE100540AC7 /* Question4view.swift in Sources */,
 				4F016A0D2A699BF300540AC7 /* Question5view.swift in Sources */,
 				7F4B38F02A68EA59009D4751 /* ToDoContentView.swift in Sources */,
+				7F703D502A6A3E1500AFD3A0 /* FeynmanTechnique.swift in Sources */,
 				7F1B04092A69C7300011A92A /* Dashboard.swift in Sources */,
 				7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */,
 			);
