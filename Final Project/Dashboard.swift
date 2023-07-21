@@ -30,11 +30,35 @@ struct Dashboard: View {
                 .foregroundColor(Color("AccentColor5"))
                 .padding()
                 
-               
-                Text("Check out other study methods:")
-                    .fontWeight(.semibold)
-                .foregroundColor(Color("AccentColor5"))
-                .padding(.top, 3.0)
+                VStack{
+                    Text("Check out other study methods:")
+                        .fontWeight(.semibold)
+                        .foregroundColor(Color("AccentColor5"))
+                        .padding()
+                    
+                    NavigationLink(destination: PomodoroMethod()){
+                        Text(" ➡ Pomodoro Method")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    .padding()
+                    
+                    NavigationLink(destination: FeynmanTechnique()){
+                        Text(" ➡ Feynman Technique")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    
+                    
+                    NavigationLink(destination: SpaceRepetition()){
+                        Text(" ➡ Space Repetition")
+                    }
+                    .foregroundColor(Color("AccentColor5"))
+                    .padding(.top, 10.0)
+                    .padding(.bottom, 35.0)
+                }
+                .background(Rectangle() .foregroundColor(.accentColor))
+                .cornerRadius(15)
+                
+                
             }
         }
     }

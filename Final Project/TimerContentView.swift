@@ -21,6 +21,7 @@ struct TimerContentView: View {
             Text("SET YOUR WORK TIMER!")
                 .multilineTextAlignment(.center)
                 .font(.system(size:20))
+                .fontWeight(.semibold)
                 .padding(.vertical, 3.0)
             Text("You can also use this timer for breaks :)")
                 .font(.system(size:15))
