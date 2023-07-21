@@ -23,6 +23,7 @@ struct SpaceRepetition: View {
                 
                 Text("**Space Repetition** involves actively recalling information in spaced intervals.")
                     .padding()
+                    .foregroundColor(Color("AccentColor5"))
                 
                 List {
                     Text("1. Choose a day to work or study")
@@ -36,7 +37,10 @@ struct SpaceRepetition: View {
                 ScrollView{
                     Text("This method is especially useful if you want to develop a deep understanding and internalization of your information!")
                         .padding()
+                        .foregroundColor(Color("AccentColor5"))
                         
+                    Text("_________________________________________")
+                    
                     Text("Read more about Space Repetition and why it works here:")
                         .padding()
                         .fontWeight(.semibold)
