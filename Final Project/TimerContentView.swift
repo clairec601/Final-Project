@@ -47,15 +47,17 @@ struct TimerContentView: View {
                     vm.start(minutes: vm.minutes)
                 }
                 .disabled(vm.isRunning)
+                .foregroundColor(.blue)
                 
                 Button("Reset", action: vm.reset)
                 .foregroundColor(.red)
             }
             
         }
+        
         .onReceive(timer){_ in
             vm.updateCountdown()
-            if (vm.time == "0:00"){
+            if (vm.time == "0:01"){
                     self.playSound()
             }
         }
