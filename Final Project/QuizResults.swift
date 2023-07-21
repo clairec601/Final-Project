@@ -51,11 +51,14 @@ struct QuizResults: View {
                                 Text("5. Repeat!")
                                 
                             }
+                            .frame(maxHeight: 340)
+                            .background(Color("AccentColor"))
+                            .scrollContentBackground(.hidden)
                             Text("You can also use this method with a friend! Having another person with you to improve motivation is a productivity technique known as body doubling.")
                                 .padding()
                             
                             
-                        }
+                       }
                     }
                     
                     if (ContentView.counter2 >= 3){
@@ -74,6 +77,9 @@ struct QuizResults: View {
                                 Text("2. Return to that topic after some time has passed")
                                 Text("3. Keep increasing those intervals of time between sessions")
                             }
+                            .frame(maxHeight: 250)
+                            .background(Color("AccentColor"))
+                            .scrollContentBackground(.hidden)
                             
                             Text("This method is especially useful if you want to really internalize something you do, rather than forgetting it all at once!")
                                 .padding()
@@ -98,8 +104,10 @@ struct QuizResults: View {
                                 Text("2. Teach it to yourself - or ideally teach another person about your topic")
                                 Text("3. Return to your studying and fill in any gaps")
                                 Text("4. Simplify your explanations, as if you were explaining your topic to a child")
-                                
                             }
+                            .frame(maxHeight: 340)
+                            .background(Color("AccentColor"))
+                            .scrollContentBackground(.hidden)
                             
                             Text("This method is especially useful if you want to develop a deep understanding and internalization of your information!")
                                 .padding()

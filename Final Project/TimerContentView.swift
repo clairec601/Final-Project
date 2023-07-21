@@ -34,8 +34,9 @@ struct TimerContentView: View {
                 
                 Text("SET YOUR WORK TIMER!")
                     .multilineTextAlignment(.center)
-                    .font(.system(size:25))
+                    //.font(.system(size:25))
                     .fontWeight(.semibold)
+                    .font(.custom("Caprasimo-Regular", size: 30 ))
                     .foregroundColor(Color("AccentColor5"))
                     .padding(.top, 20.0)
                     .padding(.bottom, 10.0)
@@ -80,7 +81,7 @@ struct TimerContentView: View {
            
             .onReceive(timer){_ in
                 vm.updateCountdown()
-                if (vm.time == "0:01"){
+                if (vm.time == "0:55"){
                     self.playSound()
                 }
             }
