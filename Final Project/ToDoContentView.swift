@@ -26,38 +26,49 @@ struct ToDoContentView: View {
     @State private var showNewTask = false
     
     var body: some View {
-        VStack {
-            HStack{
-                Text("To-Do List")
-                    .font(.system(size:40))
-                    .fontWeight(.semibold)
+        ZStack{
+            Color("AccentColor")
+                .ignoresSafeArea()
+            Circle()
+                .scale(1.7)
+                .foregroundColor(Color(red: 255/255, green: 201/255, blue: 201/255).opacity(0.50))
+           
+            VStack {
+                HStack{
+                    Text("To-Do List")
+                        .fontWeight(.semibold)
+                        .font(.custom("Caprasimo-Regular", size: 40 ))
                     
+                    Spacer()
+                    
+                    Button(action: {
+                        self.showNewTask = true
+                    }){
+                        Text("+")
+                            .font(.system(size:40))
+                            .foregroundColor(.blue)
+                    }
+                }
+                .padding()
                 Spacer()
                 
-                Button(action: {
-                    self.showNewTask = true
-                }){
-                    Text("+")
-                        .font(.system(size:40))
-                        .foregroundColor(.blue)
-                }
-            }
-            .padding() 
-            Spacer()
-            
-            List {
-                ForEach(toDoItems){ toDoItem in
-                    if toDoItem.isImportant == true {
-                        Text("📌 " + (toDoItem.title ?? "No title"))
+                List {
+                    ForEach(toDoItems){ toDoItem in
+                        if toDoItem.isImportant == true {
+                            Text("📌 " + (toDoItem.title ?? "No title"))
+                        }
+                        else {
+                            Text(toDoItem.title ?? "No title")
+                        }
                     }
-                    else {
-                        Text(toDoItem.title ?? "No title")
-                    }
+                    //.onDelete(perform: deleteTask)
                 }
-                //.onDelete(perform: deleteTask)
+                .cornerRadius(15)
+                .padding()
+                .listStyle(.plain)
+                .listRowBackground(Color("AccentColor2"))
+                .animation(.easeOut, value: showNewTask)
             }
-            .listStyle(.plain)
-            .animation(.easeOut, value: showNewTask)
         }
         
         if showNewTask {

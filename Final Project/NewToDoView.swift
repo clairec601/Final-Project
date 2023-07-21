@@ -14,35 +14,41 @@ struct NewToDoView: View {
     @Binding var showNewTask : Bool
     
     var body: some View {
-        VStack{
-            Text("Task Title:")
-                .fontWeight(.semibold)
-                .font(.system(size: 20))
-            
-            HStack{
-                TextField("Enter task description...", text: $title).padding(12.0)
-                    .background(Color(.systemGroupedBackground))
-                    .cornerRadius(15)
-                    .padding()
-                
-                Button(action:{
-                    self.showNewTask = false
-                    self.addTask(title: self.title, isImportant: self.isImportant)
-                }){
-                    Text("Add")
-                        .foregroundColor(.blue)
-                }
-                .padding(.trailing, 20.0)
-                .font(.system(size: 20))
-                
-            }
-            Toggle(isOn: $isImportant) {
-                Text("Is this task important?")
-                    .padding(.leading, 15.0)
-            }
-            .padding(.trailing, 15.0)
-            
+        
+        ZStack{
+            Color("AccentColor")
+                .ignoresSafeArea()
            
+            VStack{
+                Text("Task Title:")
+                    .fontWeight(.semibold)
+                    .font(.system(size: 20))
+                
+                HStack{
+                    TextField("Enter task description...", text: $title).padding(12.0)
+                        .background(Color(.systemGroupedBackground))
+                        .cornerRadius(15)
+                        .padding()
+                    
+                    Button(action:{
+                        self.showNewTask = false
+                        self.addTask(title: self.title, isImportant: self.isImportant)
+                    }){
+                        Text("Add")
+                            .foregroundColor(.blue)
+                    }
+                    .padding(.trailing, 20.0)
+                    .font(.system(size: 20))
+                    
+                }
+                Toggle(isOn: $isImportant) {
+                    Text("Is this task important?")
+                        .padding(.leading, 15.0)
+                }
+                .padding(.trailing, 15.0)
+                
+                
+            }
         }
     }
     private func addTask(title: String, isImportant: Bool = false) {
