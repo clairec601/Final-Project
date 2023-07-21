@@ -16,8 +16,8 @@ struct PomodoroMethod: View {
                 .ignoresSafeArea()
             
             VStack{
-                Text("THE POMODORO METHOD")
-                    .padding(.top)
+                Text("POMODORO METHOD")
+                    .padding(.top, 25.0)
                     .multilineTextAlignment(.center)
                     .fontWeight(.bold)
                     .font(.system(size: 25))
@@ -50,7 +50,7 @@ struct PomodoroMethod: View {
                           destination: URL(string: "https://www.forbes.com/sites/bryancollinseurope/2020/03/03/the-pomodoro-technique/?sh=52a84ffb3985")!)
                     .foregroundColor(.blue)
                     
-                    Text("Learn about body doubling and why it works:")
+                    Text("Learn about body doubling and its benefits:")
                         .padding()
                         .fontWeight(.semibold)
                     
