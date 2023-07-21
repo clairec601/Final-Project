@@ -23,6 +23,7 @@ struct FeynmanTechnique: View {
                 
                 Text("The **Feynman Technique** is a way of learning and taking in new information, created by Nobel Prize winning physicist Richard Feynman.")
                     .padding()
+                    .foregroundColor(Color("AccentColor5"))
                 
                 List{
                     Text("1. Write down what you wish to learn/study on a piece of paper")
@@ -38,7 +39,9 @@ struct FeynmanTechnique: View {
                 ScrollView{
                     Text("This method is especially useful if you want to develop a deep understanding and internalization of your information!")
                         .padding()
+                        .foregroundColor(Color("AccentColor5"))
                         
+                    Text("________________________________________")
                     Text("Read more about the Feynman Technique and why it works here:")
                         .padding()
                         .fontWeight(.semibold)

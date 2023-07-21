@@ -23,7 +23,7 @@ struct PomodoroMethod: View {
                     .font(.system(size: 25))
                 
                 Text("Invented by writer Francisco Cirillo, the **Pomodoro Method** is one of the most famous study methods out there today!")
-                
+                    .foregroundColor(Color("AccentColor5"))
                     .padding()
                 
                 List {
@@ -40,7 +40,8 @@ struct PomodoroMethod: View {
                 ScrollView{
                     Text("You can also use this method with a friend! Having another person with you to improve motivation is a productivity technique known as **body doubling**.")
                         .padding()
-                        
+                        .foregroundColor(Color("AccentColor5"))
+                    Text("_______________________________________")
                     Text("Read more about the Pomodoro Method and why it works here:")
                         .padding()
                         .fontWeight(.semibold)
