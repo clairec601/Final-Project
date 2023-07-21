@@ -14,7 +14,7 @@ struct Dashboard: View {
                 
                 Text("DASHBOARD")
                     .font(.title)
-                    .fontWeight(.semibold)
+                    .fontWeight(.bold)
                 Spacer()
                     .frame(height: 40)
                 

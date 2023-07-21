@@ -65,24 +65,17 @@ struct TimerContentView: View {
         .padding()
     }
    
-    func playSound(){
-        //getting the resource path
-        let resourcePath = Bundle.main.url(forResource: "Movie on 7-20-23 at 1.40 PM (online-audio-converter.com)", withExtension: "mp3")
-    
-        do{
-            //initializing audio player with the resource path
-            audioPlayer = try AVAudioPlayer(contentsOf: resourcePath!)
-    
-            //play the audio
-         //   audioPlayer?.play()
-    
-            //stop the audio
-            // audioPlayer?.stop()
-    
+    func playSound() {
+        guard let resourcePath = Bundle.main.url(forResource: "Movie on 7-20-23 at 1.40 PM (online-audio-converter.com)", withExtension: "mp3") else {
+            print("Error: Audio file not found.")
+            return
         }
-        catch{
-          //error handling
-            print(error.localizedDescription)
+        
+        do {
+            audioPlayer = try AVAudioPlayer(contentsOf: resourcePath)
+            audioPlayer?.play()
+        } catch {
+            print("Error playing audio: \(error.localizedDescription)")
         }
     }
     
