@@ -18,6 +18,7 @@ struct ContentView: View {
     static var counter2 = 0
     static var counter3 = 0
     
+    
     var body: some View {
         NavigationStack {
             ZStack(){
@@ -37,7 +38,8 @@ struct ContentView: View {
                 
                 VStack(spacing: 30) {
                 Text("Welcome to Productivi-Me")
-                    .font(.title)
+                    //.font(.title)
+                        .font(.custom("Caprasimo-Regular", size: 46 ))
                     .fontWeight(.black)
                     .foregroundColor(Color("AccentColor5"))
                     .multilineTextAlignment(.center)

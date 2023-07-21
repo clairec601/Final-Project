@@ -10,26 +10,68 @@ import SwiftUI
 struct Dashboard: View {
     var body: some View {
         NavigationStack{
-            VStack{
+            ZStack(){
                 
-                Text("DASHBOARD")
-                    .font(.title)
-                    .fontWeight(.semibold)
+                Color("AccentColor")
+                    .ignoresSafeArea()
+                
+                
+                Rectangle()
+                    .ignoresSafeArea()
+                    .frame(width: 500, height: 200)
+                    .padding(.bottom, 700.0)
+                    .foregroundColor(Color("AccentColor4"))
+                
+                RoundedRectangle(cornerRadius: 25)
+                    
+                    .frame(width: 360, height: 600)
+                    .foregroundColor(Color("AccentColor3").opacity(0.35))
+                    .padding(.top, 150.0)
+                
+                RoundedRectangle(cornerRadius: 25)
+                    
+                    .frame(width: 330, height: 500)
+                    .foregroundColor(Color("AccentColor3").opacity(0.20))
+                    .padding(.top, 150.0)
+                
+                VStack(alignment: .center, spacing: 20){
                 Spacer()
-                    .frame(height: 40)
-                
-                NavigationLink(destination: ToDoContentView()){
-                    Text("Set up a to-do list!")
+                    Text("WELCOME TO THE DASHBOARD")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .multilineTextAlignment(.center)
+                        .padding(.horizontal, 50.0)
+                        
+                        .background(Rectangle().foregroundColor(Color("AccentColor3")))
+                    Spacer()
+                    NavigationLink(destination: ToDoContentView()){
+                            Text("Set up a to-do list!")
+                        }
+                        .foregroundColor(Color("AccentColor5"))
+                        .frame(width: 300, height: 40)
+                        .background(Capsule().foregroundColor(Color("AccentColor2")).opacity(0.35))
+                        
+                       
+                    NavigationLink(destination: TimerContentView()){
+                            Text("Use our work timer!")
+                        }
+                        .foregroundColor(Color("AccentColor5"))
+                        .foregroundColor(Color("AccentColor5"))
+                        .frame(width: 300, height: 40)
+                        .background(Capsule().foregroundColor(Color("AccentColor2")).opacity(0.35))
+                        .padding()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+                        Spacer()
+          
+                    
                 }
-                .foregroundColor(Color("AccentColor5"))
-                
-                
-                NavigationLink(destination: TimerContentView()){
-                    Text("Use our work timer!")
-                }
-                .foregroundColor(Color("AccentColor5"))
-                .padding()
+                Spacer()
+                .padding(.top, 50.0)
+
             }
+            
         }
     }
 }
