@@ -23,11 +23,12 @@ struct Dashboard: View {
                 }
                 .foregroundColor(Color("AccentColor5"))
                 
-                //Will add timer code here once I'm done
-//                NavigationLink(destination: Timer()){
-//                    Text("Use our work timer!")
-//                }
-//                .foregroundColor(Color("AccentColor5"))
+                
+                NavigationLink(destination: TimerContentView()){
+                    Text("Use our work timer!")
+                }
+                .foregroundColor(Color("AccentColor5"))
+                .padding()
             }
         }
     }

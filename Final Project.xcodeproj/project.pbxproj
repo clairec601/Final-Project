@@ -19,6 +19,9 @@
 		7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38ED2A68EA33009D4751 /* Persistence.swift */; };
 		7F4B38F02A68EA59009D4751 /* ToDoContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */; };
 		7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7F4B38F12A68EACA009D4751 /* Final Project.xcdatamodeld */; };
+		7F703D472A6A069600AFD3A0 /* TimerContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D462A6A069600AFD3A0 /* TimerContentView.swift */; };
+		7F703D4A2A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7F703D492A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 */; };
+		7F703D4C2A6A06F000AFD3A0 /* ContentView-Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F703D4B2A6A06F000AFD3A0 /* ContentView-Model.swift */; };
 		7FE4E1222A6195C60091BCAC /* Final_ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */; };
 		7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FE4E1232A6195C60091BCAC /* ContentView.swift */; };
 		7FE4E1262A6195C70091BCAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FE4E1252A6195C70091BCAC /* Assets.xcassets */; };
@@ -58,6 +61,9 @@
 		7F4B38ED2A68EA33009D4751 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		7F4B38EF2A68EA59009D4751 /* ToDoContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoContentView.swift; sourceTree = "<group>"; };
 		7F4B38F22A68EACA009D4751 /* Final Project.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Final Project.xcdatamodel"; sourceTree = "<group>"; };
+		7F703D462A6A069600AFD3A0 /* TimerContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerContentView.swift; sourceTree = "<group>"; };
+		7F703D492A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3"; sourceTree = "<group>"; };
+		7F703D4B2A6A06F000AFD3A0 /* ContentView-Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ContentView-Model.swift"; sourceTree = "<group>"; };
 		7FE4E11E2A6195C60091BCAC /* Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FE4E1212A6195C60091BCAC /* Final_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Final_ProjectApp.swift; sourceTree = "<group>"; };
 		7FE4E1232A6195C60091BCAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F703D482A6A06AF00AFD3A0 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				7F703D492A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 */,
+				7F703D4B2A6A06F000AFD3A0 /* ContentView-Model.swift */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
 		7FE4E1152A6195C60091BCAC = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +147,8 @@
 				4F016A0C2A699BF300540AC7 /* Question5view.swift */,
 				7F1EB5A42A68F99A00546A38 /* QuizResults.swift */,
 				7F1B04082A69C7300011A92A /* Dashboard.swift */,
+				7F703D462A6A069600AFD3A0 /* TimerContentView.swift */,
+				7F703D482A6A06AF00AFD3A0 /* Sound */,
 				7FE4E1252A6195C70091BCAC /* Assets.xcassets */,
 				7FE4E1272A6195C70091BCAC /* Preview Content */,
 			);
@@ -269,6 +286,7 @@
 			files = (
 				7FE4E1292A6195C70091BCAC /* Preview Assets.xcassets in Resources */,
 				7FE4E1262A6195C70091BCAC /* Assets.xcassets in Resources */,
+				7F703D4A2A6A06C500AFD3A0 /* Movie on 7-20-23 at 1.40 PM (online-audio-converter.com).mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +317,8 @@
 				7FE4E1242A6195C60091BCAC /* ContentView.swift in Sources */,
 				4F016A072A698A8F00540AC7 /* Question2view.swift in Sources */,
 				7F4B38F32A68EACA009D4751 /* Final Project.xcdatamodeld in Sources */,
+				7F703D4C2A6A06F000AFD3A0 /* ContentView-Model.swift in Sources */,
+				7F703D472A6A069600AFD3A0 /* TimerContentView.swift in Sources */,
 				7F4B38EE2A68EA33009D4751 /* Persistence.swift in Sources */,
 				7F1EB5A52A68F99A00546A38 /* QuizResults.swift in Sources */,
 				7F4B38EA2A68E9EF009D4751 /* ToDoItem.swift in Sources */,

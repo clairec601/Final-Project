@@ -13,8 +13,7 @@ struct Final_ProjectApp: App {
     let persistenceController = PersistenceController.shared
     var body: some Scene { 
         WindowGroup {
-            ContentView()
-            ToDoContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
+            ContentView().environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }
