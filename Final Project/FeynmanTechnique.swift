@@ -42,7 +42,7 @@ struct FeynmanTechnique: View {
                         .foregroundColor(Color("AccentColor5"))
                         
                     Text("________________________________________")
-                    Text("Read more about the Feynman Technique and why it works here:")
+                    Text("Explore the Feynman Technique:")
                         .padding()
                         .fontWeight(.semibold)
                     
@@ -54,6 +54,8 @@ struct FeynmanTechnique: View {
                           destination: URL(string: "https://www.colorado.edu/artssciences-advising/resource-library/life-skills/the-feynman-technique-in-academic-coaching")!)
                     .foregroundColor(.blue)
                     .padding(.top, 1.0)
+                    
+                    
                 }
                 
                 

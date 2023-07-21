@@ -42,7 +42,7 @@ struct PomodoroMethod: View {
                         .padding()
                         .foregroundColor(Color("AccentColor5"))
                     Text("_______________________________________")
-                    Text("Read more about the Pomodoro Method and why it works here:")
+                    Text("Explore the Pomodoro Method:")
                         .padding()
                         .fontWeight(.semibold)
                     
@@ -50,9 +50,15 @@ struct PomodoroMethod: View {
                           destination: URL(string: "https://www.forbes.com/sites/bryancollinseurope/2020/03/03/the-pomodoro-technique/?sh=52a84ffb3985")!)
                     .foregroundColor(.blue)
                     
+                    Link("➡️ geekbot.com/best-pomodoro-apps",
+                          destination: URL(string: "https://geekbot.com/blog/best-pomodoro-apps/#forest")!)
+                    .foregroundColor(.blue)
+                    .padding(.top, 1.0)
+                    
                     Text("Learn about body doubling and its benefits:")
                         .padding()
                         .fontWeight(.semibold)
+                    
                     
                     
                     Link("➡️ cnn.com/body-doubling-productivity",

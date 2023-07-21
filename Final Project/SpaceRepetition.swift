@@ -41,7 +41,7 @@ struct SpaceRepetition: View {
                         
                     Text("_________________________________________")
                     
-                    Text("Read more about Space Repetition and why it works here:")
+                    Text("Explore Spaced Repetition:")
                         .padding()
                         .fontWeight(.semibold)
                     
@@ -53,6 +53,12 @@ struct SpaceRepetition: View {
                           destination: URL(string: "https://collegeinfogeek.com/spaced-repetition-memory-technique/")!)
                     .foregroundColor(.blue)
                     .padding(.top, 1.0)
+                    
+                    Link("➡️ muo.com/best-spaced-repetition-apps",
+                          destination: URL(string: "https://www.makeuseof.com/spaced-repetition-apps-to-study-efficiently/")!)
+                    .foregroundColor(.blue)
+                    .padding(.top, 1.0)
+                    
                 }
                 
             }
