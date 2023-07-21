@@ -23,7 +23,7 @@ struct Dashboard: View {
                 
                 RoundedRectangle(cornerRadius: 25)
                     .fill(Color("AccentColor3").opacity(0.15))
-                    .frame(width: 380, height: 635)
+                    .frame(width: 365, height: 635)
                     .padding([.leading, .bottom, .trailing])
                 
                 RoundedRectangle(cornerRadius: 25)

@@ -20,7 +20,7 @@ struct NewToDoView: View {
                 .ignoresSafeArea()
            
             VStack{
-                Text("Task Title:")
+                Text("What do you have to complete?")
                     .fontWeight(.semibold)
                     .font(.system(size: 20))
                 

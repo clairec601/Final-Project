@@ -32,6 +32,13 @@ struct ToDoContentView: View {
             Circle()
                 .scale(1.7)
                 .foregroundColor(Color(red: 255/255, green: 201/255, blue: 201/255).opacity(0.50))
+            Circle()
+                .scale(1.35)
+                .foregroundColor(Color("AccentColor3").opacity(0.15))
+        
+            Circle()
+                .scale(1.00)
+                .foregroundColor(Color("AccentColor1").opacity(0.80))
            
             VStack {
                 HStack{

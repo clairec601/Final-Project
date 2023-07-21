@@ -23,12 +23,12 @@ struct TimerContentView: View {
                 .scale(1.7)
                 .foregroundColor(Color(red: 255/255, green: 201/255, blue: 201/255).opacity(0.50))
             Circle()
-                .scale(1.35)
+                .scale(1.45)
                 .foregroundColor(Color("AccentColor2").opacity(0.15))
         
             Circle()
-                .scale(1.00)
-                .foregroundColor(Color("AccentColor1").opacity(0.80))
+                .scale(1.15)
+                .foregroundColor(Color("AccentColor2").opacity(0.20))
             
             VStack {
                 
