@@ -21,14 +21,14 @@ struct TimerContentView: View {
                 .ignoresSafeArea()
             Circle()
                 .scale(1.7)
-                .foregroundColor(Color(red: 255/255, green: 201/255, blue: 201/255).opacity(0.50))
+                .foregroundColor(Color("AccentColor1").opacity(0.70))
             Circle()
-                .scale(1.45)
-                .foregroundColor(Color("AccentColor2").opacity(0.15))
+                .scale(1.40)
+                .foregroundColor(Color("AccentColor2").opacity(0.12))
         
-            Circle()
-                .scale(1.15)
-                .foregroundColor(Color("AccentColor2").opacity(0.20))
+//            Circle()
+//                .scale(1.15)
+//                .foregroundColor(Color("AccentColor2").opacity(0.20))
             
             VStack {
                 
