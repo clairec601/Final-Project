@@ -29,6 +29,12 @@ struct Dashboard: View {
                 }
                 .foregroundColor(Color("AccentColor5"))
                 .padding()
+                
+               
+                Text("Check out other study methods:")
+                    .fontWeight(.semibold)
+                .foregroundColor(Color("AccentColor5"))
+                .padding(.top, 3.0)
             }
         }
     }

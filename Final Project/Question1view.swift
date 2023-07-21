@@ -34,7 +34,7 @@ struct Question1view: View {
                 .padding(.top, 1.0)
                 .foregroundColor(Color("AccentColor5"))
                 
-                Button("c. I don’t study at all /find it bothersome to study"){
+                Button("c. I don’t study at all/find it bothersome to study"){
                     ContentView.counter1 += 1
                     print(ContentView.counter1)
                 }
