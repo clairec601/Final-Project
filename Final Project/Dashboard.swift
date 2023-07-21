@@ -34,7 +34,7 @@ struct Dashboard: View {
                     Text("Check out other study methods:")
                         .fontWeight(.semibold)
                         .foregroundColor(Color("AccentColor5"))
-                        .padding()
+                        .padding([.top, .leading, .trailing])
                     
                     NavigationLink(destination: PomodoroMethod()){
                         Text(" ➡ Pomodoro Method")
@@ -58,7 +58,12 @@ struct Dashboard: View {
                 .background(Rectangle() .foregroundColor(.accentColor))
                 .cornerRadius(15)
                 
-                
+                Text("*The way to get started is to quit talking and begin doing.* - Walt Disney")
+                    .multilineTextAlignment(.center)
+                    .padding(.vertical, 30.0)
+                    .padding(.horizontal, 80.0)
+                    .fontWeight(.semibold)
+                    .background(Rectangle() .foregroundColor(Color("AccentColor1")).frame(maxWidth: 300).cornerRadius(15))
             }
         }
     }
